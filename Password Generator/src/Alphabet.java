@@ -1,6 +1,3 @@
-
-
-
 public class Alphabet {
 	
 	public static final String UPPERCASE_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -15,13 +12,21 @@ public class Alphabet {
 		
 		pool = new StringBuilder();
 		
-		if (uppercaseIncluded) pool.append(UPPERCASE_LETTERS);
+		if (uppercaseIncluded) {
+			pool.append(UPPERCASE_LETTERS);
+		}
 		
-		if (lowercaseIncluded) pool.append(LOWERCASE_LETTERS);
+		if (lowercaseIncluded) {
+			pool.append(LOWERCASE_LETTERS);
+		}
 		
-		if (numbersIncluded) pool.append(NUMBERS);
+		if (numbersIncluded) {
+			pool.append(NUMBERS);
+		}
 		
-		if (specialCharactersIncluded) pool.append(SYMBOLS);
+		if (specialCharactersIncluded) {
+			pool.append(SYMBOLS);
+		}
 		
 	}
 	
